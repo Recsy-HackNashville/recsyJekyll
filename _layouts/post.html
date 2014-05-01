@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+{% for meta in site.data.taylorbaylescomMetaData %}
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -39,13 +39,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a>
+                    <li><a href="#home">{{meta.tab1}}</a>
                     </li>
-                    <li><a href="#experience">Experience</a>
+                    <li><a href="#experience">{{meta.tab2}}</a>
                     </li>
-                    <li><a href="#projects">Projects</a>
+                    <li><a href="#projects">{{meta.tab3}}</a>
                     </li>
-                    <li><a href="#contact">Contact</a>
+                    <li><a href="#contact">{{meta.tab4}}</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +60,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                  {% for meta in site.data.taylorbaylescomMetaData %}
+                  
                     <div class="intro-message">
                         <h1>Taylor Bayles</h1>
                         <h3>Vanderbilt '14</h3>
@@ -84,7 +84,7 @@
                             {% endunless %}
                         </ul>
                     </div>
-                    {% endfor %}
+                    
                 </div>
             </div>
 
@@ -127,7 +127,7 @@
     <!-- JavaScript -->
     <script src="{{site.url}}/js/jquery-1.10.2.js"></script>
     <script src="{{site.url}}/js/bootstrap.js"></script>
-
+{% endfor %}
 </body>
 
 </html>
