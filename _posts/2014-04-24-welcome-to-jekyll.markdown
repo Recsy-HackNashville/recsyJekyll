@@ -21,7 +21,9 @@ print_hi('Tom')
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 Oh hey
-![]({{ site.url }}/img/ex1.png)
+![ex1]({{ site.url }}/img/ex1.png)
+Second experience:
+![ex2]({{ site.url }}/img/ex2.png)
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
